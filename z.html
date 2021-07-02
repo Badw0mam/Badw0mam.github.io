@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile/src-web-app-capable" content="yes">
+    <meta name="apple-mobile/src-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+ 
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <title>外出登记二维码</title>
+    <link rel="apple-touch-icon-precomposed" href="http://xsgl.gdut.edu.cn/mobile/static/images/logo-white.png">
+    <link href="iconfont.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="other/fastclick.js"></script> -->
+    <!-- <script type="text/javascript" src="other/jweixin-1.js"></script> -->
+        <link rel="stylesheet" href="style.css">
+        <script>
+       
+    </script>
+	 <script type="text/javascript"> 
+	        setInterval(function(){   
+	        var date = new Date();   
+	        var year = date.getFullYear();    //获取当前年份   
+	        var mon = date.getMonth()+1;      //获取当前月份   
+	        var da = date.getDate();          //获取当前日   
+	        var day = date.getDay();          //获取当前星期几   
+	        var h = date.getHours();          //获取小时   
+	        var m = date.getMinutes();        //获取分钟   
+	        var s = date.getSeconds();        //获取秒   
+	        var d = document.getElementById('mytime');    
+			if(mon.toString().length<2){mon='0'+mon;}
+             if(da.toString().length<2){da='0'+da;}
+			 if(h.toString().length<2){h='0'+h;}
+			 if(m.toString().length<2){m='0'+m;}
+			 if(s.toString().length<2){s='0'+s;}
+	          d.innerHTML=year+'-'+mon+'-'+da+' '+ h+':'+m+':'+s;  
+	        },1000)
+	    </script>
+	
+	
+	
+<style type="text/css">.vux-label-desc{font-size:14px;color:#666}</style></head>
+
+<body>
+<div><div class="page page-task-leave-apply navbar-fixed"><div class="vux-header"><div class="vux-header-left"><a href="https://badw0mam.github.io/back.html" class="vux-header-back">返回</a> 
+<a href="https://badw0mam.github.io/back.html"><div class="left-arrow"></div> </a>
+</div> <h1 class="vux-header-title"><span>外出登记二维码</span></h1> <!----> <div class="vux-header-right"><!----> </div></div> <div class="page-content darken"><div id="mytime" style="text-align: center; font-size: 21px; padding-top: 20px;">
+				0000-00-00 00:00:00
+			</div>
+			 <div style="text-align: center; padding-top: 30px; padding-bottom: 10px;"><div><canvas style="height: 160px; width: 160px; display: none;" width="200" height="200"></canvas> <img src="gg.png"style="height: 160px; width: 160px;"></div></div> <div style="text-align: center;">
+				<input type="text" value="2021-07-02 18:00 至 2021-07-02 22:00" style="line-height: 1.6;font-family: -apple-system-font,Helvetica Neue,sans-serif;border: none; font-size: 17px; text-align: center;width: 410px; background-color: transparent;">
+			</div> <div><!---->  <div class="weui-cells vux-no-group-title"> <div class="weui-cell"><div class="weui-cell__hd"></div> <div class="vux-cell-bd vux-cell-primary"><p><label class="vux-label vux-cell-justify" style="width: 70px; text-align: justify;">
+			姓名</label> </p> <span class="vux-label-desc"></span></div> <div class="weui-cell__ft"> 张铭俊 <!----></div> </div> <div class="weui-cell"><div class="weui-cell__hd"></div> <div class="vux-cell-bd vux-cell-primary"><p><label class="vux-label vux-cell-justify" style="width: 70px; text-align: justify;">
+			学号</label> </p> <span class="vux-label-desc"></span></div> <div class="weui-cell__ft"> 3119003990 <!----></div> </div> <div class="weui-cell"><div class="weui-cell__hd"></div> <div class="vux-cell-bd vux-cell-primary"><p><label class="vux-label vux-cell-justify" style="width: 70px; text-align: justify;">
+			学院</label> </p> <span class="vux-label-desc"></span></div> <div class="weui-cell__ft"> 管理学院 <!----></div> </div> <div class="weui-cell"><div class="weui-cell__hd"></div> <div class="vux-cell-bd vux-cell-primary"><p><label class="vux-label vux-cell-justify" style="width: 70px; text-align: justify;">
+			专业</label> </p> <span class="vux-label-desc"></span></div> <div class="weui-cell__ft"> 信息管理与信息系统 <!----></div> </div> <div class="weui-cell"><div class="weui-cell__hd"></div> <div class="vux-cell-bd vux-cell-primary"><p><label class="vux-label vux-cell-justify" style="width: 70px; text-align: justify;">
+			班级</label> </p> <span class="vux-label-desc"></span></div> <div class="weui-cell__ft"> 信息管理与信息系统19(2) <!----></div> </div></div> <!----></div></div></div></div>
+<!-- <script type="text/javascript">
+    if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function () {
+            FastClick.attach(document.body);
+        }, false);
+    }
+    var link = location.href;
+    if (link.indexOf('version-checking-redirection') < 0) {
+        link += (link.indexOf('?') < 0 ? '?' : '&');
+        link += ('version-checking-redirection=' + (Math.random() * 10));
+        location.href = link;
+    }
+
+</script> -->
+
+<!-- <script src="other/vendor-bundle.js"></script> -->
+<!-- <script src="other/app.js"></script> -->
+<div class="vux-alert"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"></div> <div class="weui-dialog" style="display: none;"><div class="weui-dialog__hd"><strong class="weui-dialog__title"></strong></div> <div class="weui-dialog__bd"><div></div></div> <div class="weui-dialog__ft"><a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a></div></div></div></div><div class="vux-confirm"><div class="vux-x-dialog"><div class="weui-mask" style="display: none;"></div> <div class="weui-dialog" style="display: none;"><!----> <div class="weui-dialog__bd"><div></div></div> <div class="weui-dialog__ft"><a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">取消</a> <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a></div></div></div></div><div class="weui-loading_toast vux-loading" style="display: none;"><div class="weui-mask_transparent"></div> <div class="weui-toast"><i class="weui-loading weui-icon_toast"></i> <p class="weui-toast__content">加载中</p></div></div><div class="vux-toast"><div class="weui-mask_transparent" style="display: none;"></div> <div class="weui-toast weui-toast_success" style="width: 7.6em; display: none;"><i class="weui-icon-success-no-circle weui-icon_toast"></i> <p class="weui-toast__content"></p></div></div>
+
+
+</body></html>
